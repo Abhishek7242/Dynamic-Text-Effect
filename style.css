@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00ff00;
+}
+
+.text-background {
+    font-size: 10vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url('https://33.media.tumblr.com/7ebcfbf214ecbbe54d138090ac461ba8/tumblr_nu4x4pDGYD1tjryj4o1_500.gif') repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gifAnimation 10s linear infinite;
+}
+
+@keyframes gifAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
